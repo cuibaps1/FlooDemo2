@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutPlay"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/record_button"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageViewPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/circle_accent"
+            android:layout_gravity="center_vertical"
+            android:clickable="true"
+            android:tint="@android:color/darker_gray"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/app_name"
+            />
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/record_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_text_message"
+        android:text="Record"
+        tools:text="Record" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_message"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@drawable/rounded_rect_bg"
+        android:hint="@string/type_a_message"
+        android:imeOptions="actionSend"
+        android:inputType="text"
+        android:maxLines="1"
+        android:padding="@dimen/padding_small"/>
+
+</RelativeLayout>

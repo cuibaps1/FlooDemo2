@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "832722999691",
+    "firebase_url": "https://langexdemo2.firebaseio.com",
+    "project_id": "langexdemo2",
+    "storage_bucket": "langexdemo2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832722999691:android:0acc061b8a9c6abb",
+        "android_client_info": {
+          "package_name": "com.quidproquo.floodemo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832722999691-lpmn6spqtiubh5rb1ef134s6do8tuc89.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "832722999691-lpmn6spqtiubh5rb1ef134s6do8tuc89.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJTHnZZgSXOXFQoT-cuYE0-spMeu6OhAM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
